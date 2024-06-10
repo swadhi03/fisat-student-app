@@ -5,7 +5,7 @@ import axios from 'axios'
 const View = () => {
     const [data,changeData]=useState([])
         const fetchData=()=>{
-            axios.get("https://anishpdm.github.io/dummy-api-new/student.json").then(
+            axios.get(" https://courseapplogix.onrender.com/getdata").then(
                 (response)=>{
                     console.log(response.data)
                     changeData(response.data)
@@ -38,7 +38,7 @@ const View = () => {
                                 (
                                     (value,index)=>{
                                         return <tr>
-                                        <th>{value._id}</th>
+                                        <td>{index+1}</td>
                                         <td>{value.firstname}</td>
                                         <td>{value.lastname}</td>
                                         <td>{value.college}</td>

@@ -4,8 +4,8 @@ import Navbar from './Navbar'
 const Search = () => {
     const [data,changeData] = useState(
         {
-            "First_Name" :"",
-            "Last Name":""
+            "firstname" :"",
+            "lastname":""
         }
     )
         const inputHandler=(event)=>{
@@ -22,12 +22,12 @@ const Search = () => {
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div className="row g-3">
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <label htmlFor="" className="form-label">Enter First Name:</label>
-                            <input type="text" className="form-control" name='First_Name' value={data.name} onChange={inputHandler}/>
+                            <label htmlFor="" className="form-label"><b>Enter First Name:</b></label>
+                            <input type="text" className="form-control" name='firstname' value={data.firstname} onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <label htmlFor="" className="form-label">Enter Last Name:</label>
-                            <input type="text" className="form-control" name='Last_Name' value={data.name} onChange={inputHandler}/>
+                            <label htmlFor="" className="form-label"><b>Enter Last Name:</b></label>
+                            <input type="text" className="form-control" name='lastname' value={data.lastname} onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <button className="btn btn-success" onClick={readValue}>Search</button>
